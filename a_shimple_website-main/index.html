@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    
+    <!-- External CSS file  -->
+    <!-- (this is blank, just setting it up for you in case you want to put css in a different file in the future.-->
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+      <!-- External sJavaScript file -->
+    <script src="./script.js"></script>
+  <!-- (this is blank, just setting it up for you 
+  in case you want to put javascript in a different file, 
+  and include it in this website, in the future.-->
+
+  
+    <h1>Shm Garanganao Almeda </h1>
+  <h2>pronouns: they/them</h2>
+  <h3> major: computer science PhD candidate </h3>
+    <h4>i'm here because i love to teach this class UwU </h4>
+  
+
+  <div id="fun-fact" style="max-width: 500px; color: #4D693F; background-color: #FFE06B;">
+
+    <img style="width: 300px;" src="./shadow.webp" alt="shadow">
+    fun fact: i like shadow the hedgehog and hatsune miku
+  
+  </div>
+    
+
+    <!-- this button is told that, when clicked, it should look for some JavaScript code that has a function called toggleSection() and run that code. -->
+    <button onclick="toggleSection()"> i am a BUTTON! click me to make something happen...</button>
+
+
+    <div id="secret-fact" style=" max-width: 500px; display: none;">
+          <img style="width: 300px;" src="./scourge_the_hedgehog.webp" alt="scourge_the_hedgehog">
+          <p style="color: green; background-color: lightorange;">
+            a lot of people think shadow the hedgehog is my favorite hedgehog...
+            but to be totally honest i actually really like SCOURGE the hedgehog 
+            also to be extra super honest i haven't even played the games or read 
+            the comics i just like looking at pictures of these guys.
+          </p>
+    </div>
+    
+    <!-- Inline JavaScript example -->
+    <script> //this section is written in JavaScript!
+      //see how the above button says on onclick="toggleSection()"? 
+        function toggleSection() { 
+            const section = document.getElementById('secret-fact'); //go find the section called secret-fact...
+            if (section.style.display === 'none') { //if its not being displayed...
+                section.style.display = 'block'; //turn it on!
+            } else { //otherwise...
+                section.style.display = 'none'; //turn it off.
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
